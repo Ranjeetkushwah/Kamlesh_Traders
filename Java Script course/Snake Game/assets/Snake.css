@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;;
+    
+}
+
+body{
+    background-color: rgb(198, 250, 125);
+}
+
+.container{
+
+    background-image: url("./assets/DALL·E\ 2025-02-15\ 17.36.19\ -\ A\ 3D-rendered\ digital\ image\ of\ a\ mystical\ snake\ land.\ The\ scene\ features\ giant\ serpents\ slithering\ around\ ancient\ ruins\ covered\ in\ glowing\ moss.\ The\ l.webp");
+    min-height: 90vh; /* vh view port height*/
+    background-repeat: no-repeat ;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ 
+}
+
+.heading{
+    background-color: rgb(186, 248, 100) ;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(220, 145, 255);
+    padding: 1vmin; /* vh or vw jo bhi chota hoga bo vmin hoga , vh or vw me jo bada hoga bo vmax hoga*/
+    font-size: 39px;
+    font-weight:bold ;
+    font-family: "Rubik Glitch Pop", serif;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight:bold ;
+    font-family: "Rubik Glitch Pop", serif;
+    color: blueviolet;
+      margin-right: -20px ;
+}
+
+#highScoreBox{
+    color: blueviolet;
+    position: absolute;
+    top:9px;
+    left: 200px;
+    font-size: 39px;
+    font-weight:bold ;
+    font-family: "Rubik Glitch Pop", serif;
+    margin-left: -50px;
+
+
+}
+
+#board{
+     background:linear-gradient(rgb(155, 248, 155), rgb(250, 250, 159));
+     width: 92vmin;
+     height: 92vmin;
+     border: 2px solid black;
+     display: grid;
+     grid-template-columns:repeat(18,1fr) ; /* we are using repeat function and 18 row and 18 colms   */
+     grid-template-rows: repeat(18,1fr) ;
+}
+
+
+.snakeHead{
+
+    background-color: rgb(216, 31, 216);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    /* background-color: rgb(216, 31, 216); */
+    background: linear-gradient(red,yellow) ;
+    
+    border: .25 vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(rgb(255, 170, 0), rgb(255, 225, 0));
+    border: .25 vmin solid rgb(18, 12, 12);
+    border-radius: 10px;
+
+
+
+
+}
+
+
